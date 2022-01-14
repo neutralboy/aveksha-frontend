@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+<BaseLayout title="Home" >
+	<div class="flex justify-center bg-offWhite" >
+		<div class="lg:container flex justify-between" >
+			<div class="w-full m-4 py-8 px-8" >
+				<div>
+					<h2 class="mx-10 text-3xl text-blue-900 font-display text-center" >
+						Help bring healthcare to rural families in India
+					</h2>
+					<h3 class="mx-20 text-gray-700 text-lg text-center mt-3" >
+						Join our mission in bringing quality healthcare to rural populations of India like our 1000+ sponsors
+					</h3>
+				</div>
+
+				<div class="w-3/5 mx-auto border border-gray-400 mt-3 rounded-md shadow bg-white" >
+					<div class="bg-yellow-50 py-4 uppercase font-bold text-base text-center text-gray-700 border-b-gray-400 border" >
+						Choose an amount to give
+					</div>
+					<div class="grid grid-cols-3 px-4 mt-4 text-gray-700" >
+						<div class="p-1" >
+							<button class="p-3 text-lg text-white bg-blue-900 w-full rounded" >
+								$100
+							</button>
+						</div>
+
+						<div class="p-1" >
+							<button class="bg-gray-200 p-3 w-full text-lg rounded" >
+								$50
+							</button>
+						</div>
+
+						<div class="p-1" >
+							<button class="bg-gray-200 p-3 w-full text-lg rounded" >
+								$10
+							</button>
+						</div>
+					</div>
+
+					<div class="my-1 flex justify-center text-gray-700 px-5" >
+						<div class="w-1/3" >
+							<button class="bg-gray-200 p-3 w-full text-lg rounded" >
+								$5
+							</button>
+						</div>
+						<div class="hidden w-full ml-2" >
+							<p class="block my-auto text-2xl" >$</p>
+							<input placeholder="Other amount" class="block w-1/2 appearance-none border-b-2 py-1 px-1 bg-white text-gray-700 placeholder-gray-350 text-lg focus:outline-none focus:ring-0  focus:border-b-gray-400" >
+						</div>
+						<div class="border border-gray-300 w-full text-center p-3 rounded bg-gray-200 ml-2" >
+							Other amount
+						</div>
+					</div>
+
+					<div class="flex justify-center my-4 mx-4 border-2 border-gray-300 rounded text-sm" >
+						<button class="block w-full border-r-2 border-gray-300 py-1 bg-blue-900 text-white" >Monthly</button>
+						<button class="block w-full border-r-2 border-gray-300 py-1">Annual</button>
+						<button class="block w-full border-gray-300 py-1">One time</button>
+					</div>
+
+					<div class="mx-4 my-3" >
+						<button class="w-full py-2 bg-blue-900 rounded text-lg text-white">
+							DONATE
+						</button>
+					</div>
+
+					<div class="flex justify-center" >
+						<a class="inline-block mx-auto text-gray-600 text-sm text-center font-bold border-b-gray-400 border-b mb-4" >
+							Other ways to give
+						</a>
+					</div>
+
+
+				</div>
+
+
+			</div>
+			<div class="h-full w-full mx-8" >
+				<img src="https://res.cloudinary.com/poorna/image/upload/v1642181798/aveksha/500px_Square.png" >
+			</div>
+		</div>
+	</div>
+	<!-- BAND -->
+	<div style="background-image: url('https://res.cloudinary.com/poorna/image/upload/v1642173919/aveksha/60e32bec436ec482c8fae1e8_Mesh_87.png'); background-repeat: no-repeat; background-size: cover;" class="bg-gray-300 p-8" >
+		<div class="flex my-auto" >
+			<div class="w-full my-auto" >
+				<h4 class="text-4xl font-bold" >
+					Building equity in healthcare for the underserved
+				</h4>
+			</div>
+			<div class="w-full" >
+				<div class="flex justify-end my-auto space-x-4 " >
+					<a href="insta" class="block border border-gray-400 rounded-md p-2" >
+						<svg class="fill-current"  width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.002 21.041C9.54195 21.041 9.25195 21.028 8.29195 20.986C7.54332 20.9614 6.80439 20.8092 6.10695 20.536C4.90026 20.0664 3.94609 19.1119 3.47695 17.905C3.21426 17.205 3.07257 16.4655 3.05795 15.718C3.00195 14.76 3.00195 14.446 3.00195 12.005C3.00195 9.538 3.01495 9.25 3.05795 8.295C3.07289 7.54853 3.21457 6.81001 3.47695 6.111C3.94558 4.90253 4.9013 3.94718 6.10995 3.479C6.8086 3.21521 7.5473 3.07315 8.29395 3.059C9.24895 3.005 9.56295 3.005 12.002 3.005C14.482 3.005 14.767 3.018 15.712 3.059C16.4605 3.07327 17.2012 3.21531 17.902 3.479C19.1103 3.94771 20.0658 4.90288 20.535 6.111C20.8021 6.8202 20.9445 7.57026 20.956 8.328C21.012 9.286 21.012 9.59901 21.012 12.039C21.012 14.479 20.998 14.799 20.956 15.746C20.9411 16.4942 20.799 17.2344 20.536 17.935C20.0656 19.1427 19.11 20.0976 17.902 20.567C17.2022 20.8292 16.4631 20.9709 15.716 20.986C14.761 21.041 14.448 21.041 12.002 21.041ZM11.968 4.588C9.52195 4.588 9.26795 4.6 8.31295 4.643C7.74294 4.65056 7.17843 4.75575 6.64395 4.954C5.85471 5.25601 5.23018 5.878 4.92495 6.666C4.72517 7.2063 4.61996 7.77698 4.61395 8.353C4.56095 9.322 4.56095 9.576 4.56095 12.005C4.56095 14.405 4.56995 14.696 4.61395 15.659C4.62291 16.2292 4.72805 16.7938 4.92495 17.329C5.23063 18.1165 5.85505 18.738 6.64395 19.04C7.17807 19.2396 7.7428 19.3448 8.31295 19.351C9.28095 19.407 9.53595 19.407 11.968 19.407C14.421 19.407 14.675 19.395 15.622 19.351C16.1924 19.3441 16.7573 19.2389 17.292 19.04C18.0764 18.7354 18.6969 18.1153 19.002 17.331C19.2014 16.7903 19.3065 16.2193 19.313 15.643H19.324C19.367 14.687 19.367 14.432 19.367 11.989C19.367 9.54601 19.356 9.289 19.313 8.334C19.304 7.76446 19.1988 7.20052 19.002 6.666C18.6976 5.88058 18.077 5.2593 17.292 4.954C16.7574 4.75475 16.1924 4.64953 15.622 4.643C14.655 4.588 14.402 4.588 11.968 4.588ZM12.002 16.624C10.1319 16.6252 8.44537 15.4997 7.72882 13.7725C7.01226 12.0452 7.40686 10.0563 8.72858 8.73347C10.0503 7.4106 12.0388 7.01428 13.7667 7.72934C15.4946 8.4444 16.6215 10.13 16.622 12C16.6192 14.5511 14.553 16.619 12.002 16.624ZM12.002 8.998C10.3451 8.998 9.00195 10.3412 9.00195 11.998C9.00195 13.6549 10.3451 14.998 12.002 14.998C13.6588 14.998 15.002 13.6549 15.002 11.998C14.9981 10.3427 13.6572 9.00185 12.002 8.998ZM16.802 8.28501C16.2074 8.2828 15.7269 7.79959 15.728 7.20501C15.7291 6.61043 16.2114 6.12901 16.806 6.12901C17.4005 6.12901 17.8828 6.61042 17.884 7.205C17.8842 7.49187 17.7702 7.76703 17.5672 7.96968C17.3642 8.17234 17.0888 8.2858 16.802 8.28501Z"></path>
+						</svg>
+					</a>
+					<a class="block border border-gray-400 rounded-md p-2" >
+						<svg class="fill-current" width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20 22H4C2.89543 22 2 21.1046 2 20V9.049C2.03375 8.37786 2.39728 7.76686 2.971 7.41699L10.971 2.61699C11.6041 2.23737 12.3949 2.23737 13.028 2.61699L21.028 7.41699C21.6292 7.77977 21.9976 8.42984 22 9.13199V20C22 21.1046 21.1046 22 20 22ZM4 9.86799V20H20V9.86799L12 15.201L4 9.86799ZM12 4.33199L5.316 8.34199L12 12.798L18.683 8.34199L12 4.33199Z" ></path>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+</BaseLayout>

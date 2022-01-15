@@ -11,6 +11,10 @@ const { title, description, image, url } = Astro.props;
         <meta property="og:title" content={`${title} | Aveksha for Seva`} >
         <meta property="og:url" content={`https://www.avekshaforseva.com/${url || ""}`} />
 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Work+Sans&display=swap" rel="stylesheet"> 
@@ -27,10 +31,10 @@ const { title, description, image, url } = Astro.props;
             <div class="flex justify-between container" >
                 <div class="my-auto" >
                     <div class="flex text-base text-gray-700 " >
-                        <div class="text-2xl text-black font-display  ml-3 block">
-                            <p>
+                        <div class="text-2xl text-gray-800 font-display hover:text-gray-600  ml-3 block border-b-4 border-contrast">
+                            <a href="/" >
                                 Aveksha for Seva
-                            </p>
+                            </a>
                         </div>
                         <div class="flex justify-between ml-8 gap-x-6 uppercase" >
                             <div class="my-auto hover:text-black" >
@@ -40,7 +44,7 @@ const { title, description, image, url } = Astro.props;
                                 <a href="/team">Team</a>
                             </div>
                             <div class="my-auto hover:text-black" >
-                                <a href="/team">Opportunities</a>
+                                <a href="/opportunities">Opportunities</a>
                             </div>
                         </div>
 
@@ -48,7 +52,7 @@ const { title, description, image, url } = Astro.props;
                 </div>
                 <div class="my-auto" >
                     <div class="flex justify-between" >
-                        <a class="text-base bg-blue-900 hover:shadow-md py-2 px-4 rounded-md text-white mr-2" >
+                        <a href="/login" class="text-base bg-blue-900 hover:shadow-md py-2 px-4 rounded-md text-white mr-2" >
                             Login or Signup
                         </a>
                         <a href="/donate" class="font-body text-base bg-contrast hover:shadow-md py-2 px-4 rounded-md text-gray-800" >
@@ -61,22 +65,26 @@ const { title, description, image, url } = Astro.props;
         <div class="font-body" >
             <slot />
         </div>
-        <footer class="lg:container bg-white mx-auto my-14" >
-        <div class="flex justify-center" >
-            <div class="w-2/6 my-auto" >
-                <h5 class="text-2xl font-display my-auto text-center text-gray-800" >
-                    Get our newsletter
-                </h5>
-                <p class="text-gray-700 mt-2 text-center" >
-                    Have our monthly newletter delivered right to your inbox. No spam guaranteed. 
-                </p>
+        <footer class="lg:container bg-white mx-auto my-20" >
+            <div class="flex justify-center" >
+                <div class="w-2/6 my-auto" >
+                    <h5 class="text-2xl font-display my-auto text-center text-gray-800" >
+                        Get our newsletter
+                    </h5>
+                    <p class="text-gray-700 mt-2 text-center" >
+                        Have our monthly newletter delivered right to your inbox. No spam guaranteed. 
+                    </p>
+                </div>
+                <form class="w-2/6 px-4 py-4 flex" >
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
+                        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                    </div>
+                    <button class="mt-auto bg-blue-900 hover:shadow-md p-2 rounded text-gray-200 block ml-2 text-base" >
+                        Subscribe
+                    </button>
+                </form>
             </div>
-            <form class="block w-2/6 px-4 py-4" > 
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
-                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@flowbite.com" required>
-            </form>
-        </div>
-
         </footer>
     </body>
 </html>

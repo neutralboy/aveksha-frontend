@@ -65,7 +65,7 @@ const { title, description, image, url } = Astro.props;
         <div class="font-body" >
             <slot />
         </div>
-        <footer class="lg:container bg-white mx-auto my-20" >
+        <footer class="lg:container bg-white mx-auto my-20  font-body" >
             <div class="flex justify-center" >
                 <div class="w-2/6 my-auto" >
                     <h5 class="text-2xl font-display my-auto text-center text-gray-800" >
@@ -84,6 +84,30 @@ const { title, description, image, url } = Astro.props;
                         Subscribe
                     </button>
                 </form>
+            </div>
+            <div class="flex justify-center mt-10 gap-x-12" >
+                <div>
+                    <h5 class="text-2xl text-gray-700 font-bold" > about </h5>
+                    <div class="flex flex-col text-lg text-gray-600" >
+                        <a href="/work" >work</a>
+                        <a href="/team" >team</a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-2xl text-gray-700 font-bold" >connect with us</h5>
+                    <div class="flex flex-col text-lg text-gray-600" >
+                        <a href="/opportunities" >opportunities</a>
+                        <a href="" >instagram</a>
+                        <a href="" >mail</a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-2xl text-gray-700 font-bold" >donate</h5>
+                    <div class="flex flex-col text-lg text-gray-600" >
+                        <a href="/donate" >donate now</a>
+                        <a>write a cheque</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

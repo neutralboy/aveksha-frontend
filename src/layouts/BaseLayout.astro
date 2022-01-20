@@ -13,17 +13,22 @@ const { title, description, image, url } = Astro.props;
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Work+Sans&display=swap" rel="stylesheet"> 
 
-        <link
+
+        <!-- LOOK BELOW -->
+        <!-- <link
             rel="stylesheet"
             type="text/css"
             href={Astro.resolve("../global.css")}
-        >
+        > -->
+        <!-- LOOK ABOVE -->
+        <style global >
+            @import "../global.css"
+        </style>
+
         <meta property="og:locale" content="en_US" />
     </head>
     <body>

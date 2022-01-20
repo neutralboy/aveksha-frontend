@@ -23,7 +23,6 @@ const { title, description, image, url } = Astro.props;
             rel="stylesheet"
             href={Astro.resolve("../styles/global.css")}
         >
-
         <meta property="og:locale" content="en_US" />
     </head>
     <body>
@@ -43,17 +42,14 @@ const { title, description, image, url } = Astro.props;
                             <div class="my-auto hover:text-black" >
                                 <a href="/team">Team</a>
                             </div>
-                            <div class="my-auto hover:text-black" >
-                                <a href="/opportunities">Opportunities</a>
-                            </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="my-auto" >
                     <div class="flex justify-between" >
-                        <a href="/login" class="text-base bg-blue-900 hover:shadow-md py-2 px-4 rounded-md text-white mr-2" >
-                            Login or Signup
+                        <a href="/join-us" class="text-base bg-blue-900 hover:shadow-md py-2 px-4 rounded-md text-white mr-2" >
+                            Join Us
                         </a>
                         <a href="/donate" class="font-body text-base bg-contrast hover:shadow-md py-2 px-4 rounded-md text-gray-800" >
                             Donate
